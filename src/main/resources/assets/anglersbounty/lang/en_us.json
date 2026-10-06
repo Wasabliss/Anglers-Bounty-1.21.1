@@ -1,4 +1,8 @@
 {
   "item.anglersbounty.placeholder": "Placeholder",
-  "item.anglersbounty.seabobbler": "Bobbler of The Sea"
+  "item.anglersbounty.seabobber": "Bobber of The Sea",
+  "item.anglersbounty.bobber_base": "Bobber Base",
+
+  "creativetab.anglersbounty.anglersbounty_items": "Angler's Bounty Items",
+  "creativetab.anglersbounty.anglersbounty_placeholder": "Angler's Bounty Placeholders"
 }

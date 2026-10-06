@@ -12,7 +12,10 @@ public class ModItems {
     public static final DeferredItem<Item> PLACEHOLDER = ITEMS.register("placeholder",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> BOTS = ITEMS.register("seabobbler",
+    public static final DeferredItem<Item> BOTS = ITEMS.register("seabobber",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> BB = ITEMS.register("bobber_base",
             () -> new Item(new Item.Properties()));
 
 

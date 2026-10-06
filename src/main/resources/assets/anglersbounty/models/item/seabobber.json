@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "anglersbounty:item/seabobbler"
+    "layer0": "anglersbounty:item/seabobber"
   }
 }
