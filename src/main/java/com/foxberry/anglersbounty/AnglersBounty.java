@@ -1,5 +1,6 @@
 package com.foxberry.anglersbounty;
 
+import com.foxberry.anglersbounty.component.ModDataComponents;
 import com.foxberry.anglersbounty.item.ModCreativeModeTabs;
 import com.foxberry.anglersbounty.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,9 +37,14 @@ public class AnglersBounty {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Registers Modded Creative Tabs
         ModCreativeModeTabs.register(modEventBus);
 
+        // Registers Modded Items
         ModItems.register(modEventBus);
+
+        // Registers Custom Data Components
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +57,7 @@ public class AnglersBounty {
 
     }
 
-    // Add the example block item to the building blocks tab
+    // Add Modded Content to the Vanilla Creative Mode Menu
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.PLACEHOLDER);
@@ -60,7 +66,7 @@ public class AnglersBounty {
         }
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    // Unused, Do not delete or might break something
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 

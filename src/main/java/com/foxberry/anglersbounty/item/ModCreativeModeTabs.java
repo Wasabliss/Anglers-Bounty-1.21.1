@@ -15,6 +15,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AnglersBounty.MOD_ID);
 
+    // Adds an Angler's Bounty Items Tab to the Creative Mode Menu
     public static final Supplier<CreativeModeTab> ANGLERSBOUNTY_ITEMS_TAB = CREATIVE_MODE_TAB.register("anglersbounty_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BB.get()))
                     .title(Component.translatable("creativetab.anglersbounty.anglersbounty_items"))
@@ -23,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BOTS);
                     }).build());
 
+    // Adds an Angler's Bounty Placeholder Tab to the Creative Mode Menu (DELETE OR CHANGE ON RELEASE!!!)
     public static final Supplier<CreativeModeTab> ANGLERSBOUNTY_PLACEHOLDER_TAB = CREATIVE_MODE_TAB.register("anglersbounty_placeholder_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PLACEHOLDER.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(AnglersBounty.MOD_ID, "anglersbounty_items_tab"))
