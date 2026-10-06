@@ -1,4 +1,4 @@
-package com.foxberry.variedfishing;
+package com.foxberry.anglersbounty;
 
 import java.util.List;
 
